@@ -1,9 +1,12 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/a1SE4wKh)
-# 3500 PA 01 Project Repo
+To generate a study guide, enter the following as arguments to Driver
+- Path which contains all markdown files you'd like to be exported 
+- How you would like the content to be sorted by : "filename", "modified", or "created"
+- Path to where the studyguide should be stored (must be a .md)
+The study guide will contain all headings marked by #, ##, ###, or #### and all important info contained within 
+double brackets [[]]
+Additionally, all questions in the format [[question :: answer]] will be output to a file of the same path of the
+studyguide, but with .sr rather than .md
+[output.png](src/main/resources/screenshots/output.png)
 
-[PA Write Up](https://markefontenot.notion.site/PA-01-Summarize-This-c8275591b4eb43df9f56dbae881f2423) 
-
-It include several additional tools:
-1. Gradle Build Automation
-1. JaCoCo for Test Coverage
-1. CheckStyle for Code Style Checks (Using the custom [cs3500 check file](./config/checkstyle/cs3500-checkstyle.xml)) 
+To review these questions later, run driver with no arguments. You will be prompted for the path to a .sr file
+[questionFile.png](src/main/resources/screenshots/questionFile.png)
